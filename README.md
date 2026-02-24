@@ -1,70 +1,85 @@
 🧠 AI Fake News Detection System
-<img width="1231" height="4" alt="image" src="https://github.com/user-attachments/assets/9a2970c4-69ea-4efd-ad42-c89c65f31a5a" />
-
 📌 Project Overview
 
-The AI Fake News Detection System is a Machine Learning and NLP-based project designed to classify news articles as Fake News or Real News. The system uses text preprocessing, TF-IDF feature extraction, and multiple machine learning models to achieve high accuracy. A Streamlit web application is deployed for real-time prediction.
-<img width="1231" height="4" alt="image" src="https://github.com/user-attachments/assets/f6d5c01e-8285-4e20-a929-7aff8ad31653" />
+The AI Fake News Detection System is a Machine Learning and Natural Language Processing (NLP) project that classifies news articles as Fake News or Real News.
+
+The system performs text preprocessing, feature extraction using TF-IDF, and trains multiple machine learning models to achieve high classification accuracy.
+
+A Streamlit web application is deployed for real-time prediction.
 
 🎯 Objective
 
-To build an intelligent text classification model that can automatically detect whether a news article is fake or real using Natural Language Processing and Machine Learning techniques.
-<img width="1231" height="4" alt="image" src="https://github.com/user-attachments/assets/90738878-a508-472f-a562-36c0ca8849a8" />
+To build a text classification model that detects whether a news article is fake or real using Machine Learning and NLP techniques.
 
 📂 Dataset
 
 Dataset used: Fake and Real News Dataset (ISOT)
-Source: https://www.kaggle.com/datasets/clmentbisaillon/fake-and-real-news-dataset
+Source:
+https://www.kaggle.com/datasets/clmentbisaillon/fake-and-real-news-dataset
 
 Dataset contains:
 
 Fake.csv → Fake news articles
+
 True.csv → Real news articles
-Total samples: ~44,000 news articles
-<img width="1231" height="4" alt="image" src="https://github.com/user-attachments/assets/9a443f1a-3ec5-4763-8d7a-d015f3df94c1" />
+
+Total dataset size: ~44,000 news articles.
 
 ⚙️ Technologies Used
 
 Python
-Machine Learning (Scikit-learn)
+
+Pandas & NumPy
+
+Scikit-learn
+
 Natural Language Processing (NLP)
+
 TF-IDF Vectorization
-Streamlit (Web App)
-Pandas, NumPy, Matplotlib
-GitHub (Version Control)
-<img width="1231" height="4" alt="image" src="https://github.com/user-attachments/assets/cdfc92ec-f609-4baf-afe0-bee7a083d115" />
+
+Streamlit (Web Deployment)
+
+Matplotlib
 
 🧹 Data Preprocessing
 
-Steps performed:
+The following preprocessing steps were performed:
+
 Combined Fake and Real datasets
+
 Added labels (Fake = 0, Real = 1)
+
 Converted text to lowercase
+
 Removed punctuation and special characters
+
 Removed stopwords
-Prepared cleaned dataset for feature extraction
-<img width="1231" height="4" alt="image" src="https://github.com/user-attachments/assets/6b1a27c7-b412-4cfd-b667-f21b8369b987" />
+
+Merged title and text into a single content column
+
+This prepares the dataset for feature extraction and model training.
 
 🔍 Feature Engineering
 
 Used:
+
 TF-IDF Vectorizer
-N-gram features (improves accuracy)
 
-Purpose:
-Convert text into numerical form so machine learning models can understand it.
+N-gram features for improved performance
 
-<img width="788" height="3" alt="image" src="https://github.com/user-attachments/assets/b5bdf99c-1fde-4bb7-bc18-30ee7b4613a7" />
+TF-IDF converts textual data into numerical form so machine learning models can process it.
 
-🤖 Machine Learning Models Used
+🤖 Machine Learning Models
 
-We trained and compared multiple models:
+Multiple models were trained and compared:
+
 Logistic Regression
-Support Vector Machine (SVM)
-Passive Aggressive Classifier
-Ensemble Model (Best Model)
 
-<img width="788" height="3" alt="image" src="https://github.com/user-attachments/assets/ddb912fb-bb1d-4669-83df-0bc957218611" />
+Support Vector Machine (SVM)
+
+Passive Aggressive Classifier
+
+Ensemble Model (Best Performing Model)
 
 📊 Model Performance
 Model	Accuracy
@@ -73,30 +88,51 @@ SVM	~99%
 Passive Aggressive	~99%
 Ensemble Model	99.41%
 
-Best model: Ensemble Model
-
-<img width="788" height="3" alt="image" src="https://github.com/user-attachments/assets/0ccc1e99-99bd-4354-a56e-be04dcb45132" />
+The ensemble model achieved the highest validation accuracy.
 
 📈 Evaluation Metrics
 
-Used evaluation techniques:
-Accuracy Score
+Model evaluation was performed using:
+
+Accuracy
+
 Confusion Matrix
+
 Precision
+
 Recall
+
 F1-Score
 
-<img width="788" height="3" alt="image" src="https://github.com/user-attachments/assets/57d6d6af-2371-49b5-aa22-c060aec5904d" />
+These metrics ensure reliable performance assessment beyond simple accuracy.
 
-🌐 Web Application (Streamlit)
+🌐 Streamlit Web Application
 
-We developed a web app for real-time fake news detection.
+A Streamlit web application was developed to allow real-time fake news detection.
+
 Features:
-User enters news text
-Model predicts Fake or Real
-Instant results
 
-<img width="788" height="3" alt="image" src="https://github.com/user-attachments/assets/537081cb-caa0-4f2d-9f34-8c3fec938c60" />
+User enters news text
+
+Model processes and predicts
+
+Displays result as Fake or Real
+
+📄 Output Demonstration
+
+The working output of the system is available in PDF format:
+
+Real News Prediction 
+
+<img width="961" height="488" alt="image" src="https://github.com/user-attachments/assets/9dc9fd94-65f0-4374-ab63-9b6a310c57c3" />
+
+
+Fake News Prediction 
+
+<img width="961" height="488" alt="image" src="https://github.com/user-attachments/assets/87154d95-092b-4d93-bb8d-f23f8981b53d" />
+
+
+These demonstrate successful deployment and classification.
 
 📁 Project Structure
 AI-Fake-News-Detection-System/
@@ -115,30 +151,23 @@ AI-Fake-News-Detection-System/
 ├── app/
 │   └── app.py
 │
+├── outputs/
+│   ├── Output-1.pdf
+│   └── Output-2.pdf
+│
 ├── requirements.txt
 └── README.md
-
-<img width="788" height="3" alt="image" src="https://github.com/user-attachments/assets/2ac36863-b455-48bb-9ff0-ae31d697e36f" />
-
 ▶️ How to Run the Project
-Step 1: Install dependencies
+1️⃣ Install Dependencies
 pip install -r requirements.txt
-Step 2: Run Streamlit app
+2️⃣ Run Streamlit Application
 streamlit run app/app.py
-
-<img width="788" height="3" alt="image" src="https://github.com/user-attachments/assets/1394201c-68dd-4faa-a299-07a0c7dbf953" />
-
 🧪 Sample Input
 
-Example: The government said it will introduce new economic measures to improve growth and reduce unemployment.
-Output: Real News
+Example:
 
-<img width="788" height="3" alt="image" src="https://github.com/user-attachments/assets/e5abd6a7-b019-4a03-92bd-d6bb3b6f6080" />
+The government announced new economic policies to support businesses.
 
-## 📄 Output Screenshots
+Output:
 
-<img width="961" height="488" alt="image" src="https://github.com/user-attachments/assets/cb82f265-22c1-4364-926c-b1ee40a0956a" />
-
-<img width="961" height="488" alt="image" src="https://github.com/user-attachments/assets/8e1fc3ff-da15-4985-9c61-3d1e12cb6b75" />
-
-These outputs demonstrate that the model successfully classifies news articles using the deployed Streamlit web application.
+Real News
