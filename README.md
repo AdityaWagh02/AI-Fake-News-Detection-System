@@ -1,11 +1,13 @@
 🧠 AI Fake News Detection System
 
 📌 Project Overview
+
 The AI Fake News Detection System is a Machine Learning and Natural Language Processing (NLP) project that classifies news articles as Fake News or Real News.
 The system performs text preprocessing, feature extraction using TF-IDF, and trains multiple machine learning models to achieve high classification accuracy.
 A Streamlit web application is deployed for real-time prediction.
 
 🎯 Objective
+
 To build a text classification model that detects whether a news article is fake or real using Machine Learning and NLP techniques.
 
 
