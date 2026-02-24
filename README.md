@@ -1,21 +1,27 @@
 🧠 AI Fake News Detection System
+<img width="1231" height="4" alt="image" src="https://github.com/user-attachments/assets/9a2970c4-69ea-4efd-ad42-c89c65f31a5a" />
 
 📌 Project Overview
+
 The AI Fake News Detection System is a Machine Learning and NLP-based project designed to classify news articles as Fake News or Real News. The system uses text preprocessing, TF-IDF feature extraction, and multiple machine learning models to achieve high accuracy. A Streamlit web application is deployed for real-time prediction.
 
 🎯 Objective
+
 To build an intelligent text classification model that can automatically detect whether a news article is fake or real using Natural Language Processing and Machine Learning techniques.
 
 📂 Dataset
+
 Dataset used: Fake and Real News Dataset (ISOT)
 Source: https://www.kaggle.com/datasets/clmentbisaillon/fake-and-real-news-dataset
 
 Dataset contains:
+
 Fake.csv → Fake news articles
 True.csv → Real news articles
 Total samples: ~44,000 news articles
 
 ⚙️ Technologies Used
+
 Python
 Machine Learning (Scikit-learn)
 Natural Language Processing (NLP)
@@ -111,6 +117,7 @@ Output: Real News
 ## 📄 Output Screenshots
 
 <img width="961" height="488" alt="image" src="https://github.com/user-attachments/assets/cb82f265-22c1-4364-926c-b1ee40a0956a" />
-<img width="1001" height="488" alt="image" src="https://github.com/user-attachments/assets/8e1fc3ff-da15-4985-9c61-3d1e12cb6b75" />
+
+<img width="961" height="488" alt="image" src="https://github.com/user-attachments/assets/8e1fc3ff-da15-4985-9c61-3d1e12cb6b75" />
 
 These outputs demonstrate that the model successfully classifies news articles using the deployed Streamlit web application.
