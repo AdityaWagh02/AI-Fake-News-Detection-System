@@ -1,5 +1,13 @@
 # 🧠 AI Fake News Detection System
 
+## 🌐 Live Demo
+
+🚀 Streamlit Web App:  
+https://ai-fake-news-detection-system-njbpmrxwkhlisefqnnjxx9.streamlit.app/
+
+This live application allows users to enter news text and instantly detect whether it is Fake News or Real News using a trained Machine Learning model.
+
+
 ## 📌 Project Overview
 
 The AI Fake News Detection System is a Machine Learning and Natural Language Processing (NLP) project that classifies news articles as Fake News or Real News.
